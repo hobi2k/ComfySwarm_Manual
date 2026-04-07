@@ -390,14 +390,15 @@ ComfyUI 쪽 파일명: checkpoints/SDXL_base_latest.safetensors
 
 ## 9. 여러 GPU와 여러 서버
 
-SwarmUI는 여러 백엔드를 묶어 병렬 처리할 수 있다.  
-`Using More GPUs` 문서의 핵심은 다음과 같다.
+SwarmUI는 여러 백엔드를 묶어 병렬 처리할 수 있다.
 
 - 같은 서버 안의 여러 GPU도 백엔드로 나눌 수 있다.
 - 다른 머신도 백엔드로 붙일 수 있다.
 - 큐는 등록된 백엔드 순서에 따라 흘러간다.
 
 즉, `SwarmUI`는 작업자 UI이고, 실제 성능 확장은 백엔드 추가로 해결한다.
+
+자세한 설정 방법, GPU 지정 인수, 모델 경로 통일 규칙, 운영 주의사항은 [07. 멀티 GPU 및 멀티 서버 백엔드 구성](07-multi-gpu-backends.md)에서 따로 정리한다.
 
 ## 10. API는 운영 도구 장에서 본다
 
@@ -423,3 +424,4 @@ SwarmUI는 여러 백엔드를 묶어 병렬 처리할 수 있다.
 - 운영 메뉴와 API: [04. 운영 도구와 API](04-admin-operations.md)
 - 공유와 권한: [05. 원격 접속과 보안](05-remote-access-security.md)
 - 장애 대응: [06. 문제 해결과 점검표](06-troubleshooting.md)
+- 멀티 GPU 및 멀티 서버 확장: [07. 멀티 GPU 및 멀티 서버 백엔드 구성](07-multi-gpu-backends.md)
